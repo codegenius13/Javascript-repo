@@ -1,0 +1,116 @@
+body {
+    /*margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;*/
+}
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 20%;
+    transition: 2.5s;
+}
+.slide img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    opacity: .9;
+}
+/** css for manual slide navigation **/
+.navigation-manual {
+    position: absolute;
+    width: 500px;
+    margin-top: -10px;
+    display: flex;
+    float: left;
+    justify-content: center;
+}
+.manual-btn {
+    border: 2px solid midnightblue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+.manual-btn:hover {
+    background-color: darkcyan;
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+/** css for automatic navigation **/
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 500px;
+    float: left;
+    justify-content: center;
+    margin-top: 490px;
+}
+.navigation-auto div {
+    border: 2px solid midnightblue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn {
+    background: midnightblue;
+}
+#radio2:checked ~ .navigation-auto .auto-btn {
+    background: midnightblue;
+}
+#radio3:checked ~ .navigation-auto .auto-btn {
+    background: midnightblue;
+}
+#radio4:checked ~ .navigation-auto .auto-btn {
+    background: midnightblue;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .8;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .8;
+    }
+    to {
+        opacity: 1;
+    }
+}
