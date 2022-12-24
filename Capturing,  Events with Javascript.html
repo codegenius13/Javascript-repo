@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturing Events with Javascript</title>
+     <!-- Styles for mouseover, mouseout events-->
+     <style>
+        /*div {
+            width: 50px;
+            height: 50px;
+            background-color: maroon;
+        }*/
+        
+     </style>
+     <!--Styles for scrolls events-->
+     <style>
+        div {
+            width: 50px;
+            height: 5000px;
+            background-color: maroon;
+        }
+     </style>
+</head>
+<body>
+    <!-- Events basics-->
+   <!--<h1>Javascript Events</h1>
+
+    <button>Don't Press Me!</button>
+
+    <script>
+        var btn = document.querySelector('button');
+        function ouch() {
+            alert("I told you not to press me!");
+        }
+        btn.onclick = ouch;
+    </script>-->
+
+    <!-- Events Listeners-->
+    <!--<h1>Javascript Events</h1>
+    <button>Don't Press Me!</button>
+
+    <script>
+        var btn = document.querySelector('button');
+        function ouch() {
+            alert("I told you not to press me!");
+        }
+        btn.addEventListener('click', ouch);
+        //OR
+        btn.addEventListener('click', function () {
+            alert("I told you not to press me!");
+        });
+    </script>-->
+
+    <!-- EVENTS OBJECT-->
+    <!--<h1>Javascript Events</h1>
+    <button>Don't Press Me!</button>
+
+    <script>
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function (event) {
+            event.target.style.backgroundColor = "brown"
+            alert("I told you not to press me!");
+        });
+        </script>-->
+
+        <!-- Prevent Default Behaviour -->
+        <!--<h1>Javascript Events</h1>
+        <a href="https://google.com">Link to google</a>
+
+        <script>
+            var link = document.querySelector ("a");
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                alert("Sorry no google for you");
+            });
+        </script>-->
+
+        <!-- Submit Event -->
+        <!--<h1>Javascript Event</h1>
+
+        <form method="get">
+            <label>Your name. <input type="text" name="name">
+            <input type="submit">
+            </label>
+        </form>
+        <script>
+            var myForm = document.querySelector('form');
+            myForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                var formData = document.querySelector('input').value;
+                alert (formData);
+            })
+        </script>-->
+
+        <!-- Mouseover, Mouseout Events: HTML-->
+        <!--<h1>Roll your Mouse Over The Box</h1>
+        <div></div>
+        <script>
+            var heading = document.querySelector('h1');
+            var box = document.querySelector("div");
+            
+            box.addEventListener('mouseover', function () {
+                heading.innerHTML='The mouse is over the box';
+            });
+            box.addEventListener('mouseout', function () {
+                heading.innerHTML= 'The mouse has left the box';
+            });
+            heading.addEventListener('mouseover', function () {
+                heading.innerHTML= 'Roll your Mouse Over The Box';
+            });
+
+        </script>-->
+
+        <!-- Scroll Events-->
+        <!--<h1>Capturing Scroll Events</h1>
+        <div></div>
+        <script>
+            var pagetop;
+
+            window.addEventListener('scroll',function () {
+                pagetop = window.pageYOffset;
+                console.log(pagetop);
+            })
+        </script>-->
+        <!-- Window Resizing -->
+        <!--<h1>Resize the window and watch the console</h1>
+
+        <script>
+            window.addEventListener('resize', function () {
+              console.log(`The window width is ${window.innerWidth}`);  
+              console.log(`The window width is ${window.innerHeight}`);
+            });
+        </script>-->
+        <!--Key Down Event-->
+        <h1>Key Down Event</h1>
+        <p>Press a key on your Keyboard</p>
+        <script>
+            document.addEventListener('keydown',function (event) {
+                alert(`the ${event.key} key was pressed`);
+            });
+        </script>
+</body>
+</html>

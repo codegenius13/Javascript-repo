@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence, selection and loops</title>
+</head>
+<body>
+    <h1>Sequence, selection and loops in Javascript</h1>
+
+    <script>
+
+        // Sequence part 1
+
+        var myString = "I am really hungry for some bread"
+        console.log(myString)
+        var myUpperString = myString. toUpperCase ();
+        console.log(myUpperString);
+
+        // Sequence part 2
+
+        var reallyLocation = myString. search('really')
+        console.log(reallyLocation);
+        var specialWord = myString.substr(reallyLocation, 6);
+        console.log(specialWord);
+        specialWord = specialWord. toUpperCase();
+        var newString = myString.replace ("really", specialWord);
+        console.log(newString);
+
+        // Sequence part 3
+
+        var food = ['rice', 'beans', 'bread', 'cookies'];
+        
+        console.log(`${myString} ${food [0]}`);
+
+        // Loop
+
+        for (var i = 0; i < food.length; i++ ){
+        var remainder = i % 2;
+        console.log(`${myString} ${food [i]}`);
+       
+
+        // Loops + selection
+
+        if ( remainder === 0) {
+            var foodUpper = food[i].toUpperCase();
+            console.log(`${myString} ${foodUpper}`)
+        } 
+        else {
+            console.log(`${myString} ${food [i]}`) 
+        }
+    };
+    // Refactoring code
+    for (var i = 0; i < food.length; i++ ){
+        console.log(`${myString} ${food [i]}`);
+       // checking to see if the incrementor is even!
+        if ( i % 2 === 0) {
+            console.log(`${myString} ${food[i].toUpperCase()} \n`)
+        } 
+        else {
+            console.log(`${myString} ${food [i]}`) 
+        }
+    };
+
+    </script>
+</body>
+</html>

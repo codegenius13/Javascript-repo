@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM for Javascript</title>
+    <!-- Style for className-->
+    <style>
+      .blue {
+         color: blue;
+      }
+    </style>
+    <!-- enns style for className-->
+</head>
+<body>
+    <!-- getElementById -->
+    <!--<h1>DOM Examples</h1>
+
+    <p id="one">Here is aparagraph with a unique id</p>
+
+     <script>
+        document.getElementById("one").style.color = "red"
+     </script>-->
+
+     <!-- getElementsByTagName-->
+
+     <!--<h1>DOM Examples</h1>
+
+     <p>Here is a paragraph for you</p>
+     <p>Here is a paragraph for you</p>
+     <p>Here is a paragraph for you</p>
+
+     <script>
+        var myParagraphs = document.getElementsByTagName("p");
+        console.log(myParagraphs);
+     </script>-->
+
+     <!-- Using loop -->
+     <!--<h1>DOM Examples</h1>
+
+     <p>Here is a paragraph for you</p>
+     <p>Here is a paragraph for you</p>
+     <p>Here is a paragraph for you</p>
+
+     <script>
+        var ps = document.getElementsByTagName("p");
+        for ( var i = 0; i < ps.length; i++){
+            ps[i].style.color='red';
+            alert(`showing paragraph ${i}`);
+        }
+     </script>-->
+
+     <!-- getElementsByClassName-->
+
+     <!--<h1> DOM Examples</h1>
+   
+     <p class="special">Here is a paragraph for you</p>
+     <p>Here is a paragraph for you</p>
+     <p class="special">Here is a paragraph for you</p>
+     <script>
+        var myClass = document.getElementsByClassName("special");
+
+        for ( var i=0; i<myClass.length; i++){
+
+            myClass[i].style.color = "red"
+        }
+     </script>-->
+
+     <!-- querySelector-->
+    <!--<h1>DOM Examples</h1>
+     <div id="specials">
+     <p class="someclass">Here is a paragraph for you</p>
+     <p>Here is a paragraph for you</p>
+     <p>Here is a paragraph for you</p>
+     </div>
+
+     <script>
+        var myText = document.querySelector('.someclass');
+        myText.style.color = "red";
+     
+        </script>-->
+
+        <!-- querySelectorAll-->
+        <!--<h1>DOM Examples</h1>
+     <div id="specials">
+     <p class="someclass">Here is a paragraph for you</p>
+     <p>Here is a paragraph for you</p>
+     <p>Here is a paragraph for you</p>
+     </div>
+
+     <script>
+        var myText = document.querySelectorAll('#specials p');
+        for( var i=0; i<myText.length; i++){
+            myText[i].style.color = "red";
+        }
+        
+        </script>-->
+
+        <!-- innerHTML -->
+       <!--<h1>DOM Examples</h1>
+       <div id="specials">
+         <p>Here is a paragraph for you</p>
+         <p>Here is a paragraph for you</p>
+         <p>Here is a paragraph for you</p>
+       </div>
+       <script>
+         var myDiv = document.getElementById ("specials");
+         myDiv.innerHTML = "<p>Here is my new paragraph</p>"
+         //OR 
+         var myDiv = document.getElementById ("specials").innerHTML = "<p>Here is my new paragraph</p>";
+       </script>-->
+       <!-- className -->
+       <!--<h1>DOM Examples</h1>
+       <div id="specials">
+         <p>Here is a paragraph for you</p>
+         <p>Here is a paragraph for you</p>
+         <p>Here is a paragraph for you</p>
+         <script>
+            var firstPar = document.querySelector("p");
+            firstPar.className = "blue"
+         </script>-->
+         <!-- Using Elements -->
+         <!--<h1>DOM Examples</h1>
+         <form>
+            <label>
+               <input type="checkbox">YES
+            </label>
+         </form>
+         <script>
+            var myCheckbox = document.querySelector('input');
+            myCheckbox.setAttribute("checked", "checked")
+         </script>-->
+
+         <!-- Creating Elements and Text Nodes -->
+         <!--<h1>DOM Examples</h1>
+         <div>
+            <p>THIS IS THE FIRST PARAGRAPH ON THE PAGE</p>
+         </div>
+         <script>
+            var myTag = document.createElement('p')
+            var myText = document.createTextNode('Here ia a new paragraph');
+            myTag.appendChild(myText);
+            var myDiv = document.querySelector('div');
+            myDiv.appendChild(myTag);
+         </script>-->
+
+         <!-- Removing Elements -->
+         <h1>DOM Examples</h1>
+         <div>
+            <p>Here is a paragraph</p>
+            <p>Remove this paragraph</p>
+         </div>
+         <script>
+            var myDiv = document.querySelector ('div');
+            myDiv.removeChild(myDiv.children[1]);
+         </script>
+</body>
+</html>
