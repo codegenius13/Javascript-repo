@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Selections and Booleans</title>
+</head>
+<body>
+    <h1>Testing Selections</h1>
+
+    <script>
+         // Comparing values
+        var red = true;
+        var blue = false;
+        var green;
+        var myNum = 5;
+        var otherNum = 7;
+        var notNum = "chicken";
+        var myValue = notNum - myNum;
+
+       /* if (myValue) {
+            console.log("the statement is true");
+        }
+
+        else {
+            console.log("the statement is false");
+            console.log(myValue);
+        }*/
+
+        var colors = ['red', 'green', 'blue', 'yellow'];
+        var selectedColor = colors [1]
+
+        /*if (selectedColor == 'red'){
+            console.log("the color is red");
+        }
+        else if(selectedColor == 'green'){
+            console.log("the color is green")
+        }
+        else if(selectedColor == 'blue'){
+            console.log("the color is blue")
+        }
+        else {
+            console.log("the color is yellow"); 
+        }*/ 
+           // Switch statement
+        /*switch (selectedColor) {
+            case "red": console.log("the color is red");    
+                break;
+            case "green": console.log("the color is green");    
+                break;
+            case "blue": console.log("the color is blue");    
+                break;
+            case "yellow": console.log("the color is yellow");    
+                break;       
+            default: console.log("there was an error");
+                
+        }*/
+        // Using && and ||
+        var goodMood = true;
+        var gotSleep = true;
+
+       /* if (goodMood && gotSleep) {
+            console.log("Today is a good day");
+        }
+        else {
+            console.log("I am grumpy")
+        }*/
+
+        var gotBreakfast = true;
+        var gotLunch = false;
+        var gotDinner = false;
+
+        if (gotBreakfast || gotLunch || gotDinner) {
+            console.log("things are okay")
+        }
+        else {
+            console.log("I AM STARVING")
+        }
+    </script>
+</body>
+</html>
+
