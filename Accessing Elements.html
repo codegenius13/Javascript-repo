@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesing Elements</title>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <h1>Title</h1>
+            <h2>Subtitle of the page</h2>
+        </header>
+        <nav id="sidebar">
+            <ul>
+                <li class="special"><a href="#">Link one</a></li>
+                <ul class="submenu">
+                    <li><a href="#">Sub link one</a></li>
+                    <li><a href="#">Sub link two</a></li>
+                    <li><a href="#">Sub link three</a></li>
+                    <li><a href="#">Sub link four</a></li>
+                </ul>
+                <li>
+                    <li><a href="#">Link two</a></li>
+                    <li><a href="#">Link three</a></li>
+                    <li><a href="#">Link four</a></li>
+                </li>
+            </ul>
+        </nav>
+        <section id="main">
+            <h2>Section Title One</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente deleniti pariatur sit minima fugiat maiores sed reprehenderit laudantium sequi, velit qui dolores?
+             Culpa molestias, nisi quibusdam earum quam delectus?
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam cupiditate repellendus eveniet nihil velit exercitationem porro ad. Laudantium natus tempora exercitationem
+             numquam fugiat incidunt velit facilis? Culpa officiis dicta quasi.
+            </p>
+            <h2>Section Two</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim deserunt, repellat ad ducimus tenetur fugit iusto quasi tempora molestias nostrum corrupti
+             deleniti recusandae quod consectetur ullam beatae maiores consequatur.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptate autem harum dolorum? Reiciendis autem aperiam sit corrupti inventore, accusamus voluptatem.
+             Vero temporibus debitis voluptates reprehenderit. Earum molestias quae sunt.
+            </p>
+            <ol>
+                <li>Item number one</li>
+                <li class="special">Item number two</li>
+                <li>Item number three</li>
+                <li class="special">Item number four</li>
+            </ol>
+        </section>
+    </div>
+    <script src="jQuery library/jquery-3.6.1.min.js"></script>
+    <script>
+        /*$('#main').css('border', '2px solid red');
+        $('.special').css('border', '2px solid maroon')
+        $('.submenu').css('border', '2px solid darkgreen');*/
+        
+        // jQuery Events
+        $('a').click(function () {
+            //console.log($(this).html());
+                //or
+            console.log(this.innerHTML);
+        });
+    </script>
+</body>
+</html>
