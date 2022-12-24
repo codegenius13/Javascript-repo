@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.slider {
+    position: relative;
+    background-color: grey;
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+}
+.slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 50%);
+    transition: 5s;
+}
+.slider .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 5s;
+}
+.slider .slide img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+.slider .slide .info {
+    position: absolute;
+    color: black;
+    background: rgba(255, 255, 255, 0.3);
+    width: 75%;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1/ 5%);
+}
+.slider .slide .info h2 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 800;
+}
+.slider .slide .info p {
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+}
+.navigation {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+}
+.prev-btn, .next-btn {
+    z-index: 999;
+    font-size: 2em;
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    cursor: pointer;
+}
+.slider:hover .navigation {
+    opacity: 1;
+    transition: 2.5s;
+}
+.prev-btn {
+   border-radius: 50%;
+   margin-left: 30px;
+   margin-top: 70px;
+}
+.next-btn {
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 70px;
+}
+.navigation-visibility {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.navigation-visibility .slide-icon {
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    height: 20px;
+    margin: 0 6px;
+    border-radius: 50%;
+    transform: translateX(-50px);
+    box-shadow: 0 1px 3px 1px rgb(1, 1,1);
+}
+.navigation-visibility .slide-icon.active {
+    background-color: black;
+}
