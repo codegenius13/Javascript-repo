@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations using jQuery</title>
+    <style>
+        body {
+            padding: 100px;
+        }
+        nav {
+            margin-bottom: 50px;
+        }
+        nav ul {
+            overflow: hidden;
+            border-left: 1px solid black;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            width: 149px;
+            text-align: center;
+            background-color: aliceblue;
+            color: #333;
+            border-right: 1px solid #777676;
+            height: 50px;
+            line-height: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav ul li a:hover {
+            background-color: antiquewhite;
+        }
+        #box {
+            width: 450px;
+            height: 300px;
+            background-color: midnightblue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li><a href="#" id="hidebox">hide</a></li>
+        <li><a href="#" id="showbox">show</a></li>
+        <li><a href="#" id="togglebox">toggle</a></li>
+        </ul>
+    </nav>
+    <div id="box"></div>
+    <script src="jQuery library/jquery-3.6.1.min.js"></script>
+    <script>
+        $('#hidebox').click(function () {
+        $('#box').hide('normal'); // YOU CAN PUT IN A VALUE INSTEAD OF 'normal'
+        });
+        $('#showbox').click(function () {
+            $('#box').show('normal');
+        });
+        $('#togglebox').click(function () {
+            $('#box').toggle('3000', function () {
+                alert('done!')
+            });
+       });
+    </script>
+</body>
+</html>
