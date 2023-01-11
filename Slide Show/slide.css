@@ -1,0 +1,51 @@
+body {
+    padding: 100px;
+    background: #717171;
+}
+#slider {
+    width: 400px;
+    overflow: hidden;
+    border: 10px solid #4C4C4C;
+    height: 266px;
+    position: relative;
+    margin: auto;
+}
+#slider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+#slider ul li img {
+    width: 400px;
+    height: 266px;
+}
+p {
+    text-align: center;
+}
+/**** LINK STYLE ****/
+#links {
+    width: 420px;
+    display: flex;
+    margin: auto;
+}
+#links a {
+    display: block;
+    flex: 1;
+    background: maroon;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+}
+#links a:hover {
+    background: brown;
+    color: #fff;
+}
+/**** END LINK STYLE ****/
