@@ -1,0 +1,83 @@
+body {
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+#slider-wrapper {
+    width: 1000px;
+    height: 358px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#slider-wrapper ul {
+    width: 5000px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 700ms cubic-bezier(0, 165, 0.84, 0.44, 1);
+}
+#slider-wrapper ul li {
+    background-size: cover;
+    position: relative;
+    width: 1000px;
+    height: 300px;
+    float: left;
+}
+#slider-wrapper ul li:nth-child(1) {
+    background-image: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Javascript%20practice/slide%20show%20in%20javascript%202/ajman.jpg");
+}
+#slider-wrapper ul li:nth-child(2) {
+    background-image: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Javascript%20practice/slide%20show%20in%20javascript%202/al%20khor.jpg");
+}
+#slider-wrapper ul li:nth-child(3) {
+    background-image: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Javascript%20practice/slide%20show%20in%20javascript%202/al%20quwain.jpg");
+}
+#slider-wrapper ul li:nth-child(4) {
+    background-image: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Javascript%20practice/slide%20show%20in%20javascript%202/Australia%202.jpg");
+}
+#slider-wrapper ul li:nth-child(5) {
+    background-image: url("file:///C:/Users/DAMILARE/Desktop/html%20,%20css%20javascript%20practice/jjj/Javascript%20practice/slide%20show%20in%20javascript%202/Australia%203.jpg");
+}
+.content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(225, 225, 225, 0.7);
+}
+#links {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    margin-top: -43px;
+}
+#previous {
+    padding: 30px;
+    width: 150px;
+    background-color: silver;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#next {
+    padding: 30px;
+    width: 150px;
+    background-color: silver;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
