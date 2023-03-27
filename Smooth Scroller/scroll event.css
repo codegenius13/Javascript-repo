@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+}
+header {
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    background: rgba(128, 128, 128, 0.514);
+    z-index: 100;
+}
+.logo {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.logo-title h1 {
+    font-size: 2em;
+    font-weight: 700px;
+}
+.logo ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.logo ul li {
+    list-style: none;
+}
+.logo ul li a.selected {
+    background: rgb(1, 54, 1);
+    transition: .7s;
+}
+.logo ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    background-color: gray;
+    padding: 8px 30px;
+    border: 1px solid black;
+}
+.logo ul li a:hover {
+    background: rgb(1, 54, 1);
+    transition: .7s;
+}
+.display {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 100%;
+    margin-left: 200px;
+    padding-top: 200px;
+}
+.sections {
+    position: relative;
+    box-shadow: 0px 1px 5px 1px black;
+    margin-bottom: 100px;
+}
+.section-display {
+    display: flex;
+    padding: 30px;
+}
+#bags {
+    width: 400px;
+    height: 300px;
+}
+.section-text {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.section-title {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-title h1 {
+    margin-bottom: 20px;
+}
+.section-display-two {
+    display: flex;
+    justify-content: space-between;
+}
+.tiles {
+    display: block;
+}
+#tiles-img {
+    width: 150px;
+    height: 200px;
+}
+#bags-two {
+    width: 400px;
+    height: 300px;
+    margin-right: 20px;
+}
+.section-img {
+    padding: 30px;
+}
+#books {
+    width: 700px;
+    height: 250px;
+}
+.section-display-three {
+    display: flex;
+    justify-content: space-between;
+}
+.section-categories {
+    display: block;
+}
+.section-categories:nth-child(1) {
+    margin-right: 20px;
+}
+#holder {
+    width: 400px;
+    height: 250px;
+}
+.section-types {
+    display: block;
+    padding: 30px;
+}
