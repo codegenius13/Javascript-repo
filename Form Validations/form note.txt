@@ -1,0 +1,4 @@
+For PHP Regular Expressions You can go to a website called
+"RegExLib.com"
+You can also google form validation library for more plugins
+Also Check mdn client side form validation
