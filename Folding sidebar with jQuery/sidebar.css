@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    line-height: 1.4em;
+}
+main {
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+aside {
+    width: 250px;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    margin-top: 0;
+}
+article{
+    width: 525px;
+}
+h1, h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+h1{
+    height: 150px;
+    background: url('new3.jpg');
+    background-position: center;
+    line-height: 150px;
+    text-align: center;
+    color: antiquewhite;
+}
+ul{
+    list-style-type: none;
+}
+.hide-menu{
+    display: none;
+}
+.show-menu{
+    display: block;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
