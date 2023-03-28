@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Validation</title>
+    <style>
+        body {
+            padding: 30px 100px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #formdata {
+            width: 400px;
+            margin: auto;
+            padding: 15px;
+            border: 2px solid red;
+        }
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Contact Form</h1>
+    <form action="processor.php" method="post" id="myForm">
+        <p><label for="name">Name</label>
+           <input type="text" name="name" id="name" class="data">
+        </p>
+
+        <p><label for="email">Email</label>
+           <input type="email" name="email" id="email" class="data">
+        </p>
+
+        <p><label for="url">Website</label>
+           <input type="url" name="url" id="url" class="data">
+        </p>
+
+        <p><label for="comments">Comments</label>
+           <textarea name="comments" id="comments" cols="40" rows="10" class="data"></textarea>
+        </p>
+
+        <p><input type="submit" id="send" name="send" value="send it"></p>
+    </form>
+
+    <div id="formdata"></div>
+    <script src="contact form.js"></script>
+</body>
+</html>

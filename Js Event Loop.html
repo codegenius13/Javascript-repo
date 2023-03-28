@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascrript Event Loop</title>
+</head>
+<body>
+    <h1>Event Example</h1>
+    <script>
+        //ex 1...
+        /*console.log("do this first");
+        var second = "do this second";
+        for(var eachLetter of second) {
+            console.log(eachLetter);
+        }
+        console.log("do this third");*/
+
+        //ex 2...
+        /*function mkUpperCase(message) {
+            var upper = message.toUpperCase();
+            return upper;
+        }
+        function mkLowerCase(message) {
+            var lower = message.toLowerCase();
+            return lower;
+        }
+        function outputMessages(message) {
+            var output = `Uppercase version: ${mkUpperCase(message)}\n`;
+            output += `Lowercase version: ${mkLowerCase(message)}`;
+            console.log(output)
+        }
+        outputMessages("Llmas are the BEST!");*/
+
+        //ex 3...
+        /*console.log("do this first");
+        setTimeout(function () {
+            var second = "do this second";
+            for(var eachLetter of second) {
+                console.log(eachLetter)
+            }
+        }, 2000);
+        console.log("do this third");*/
+
+        //ex 4...
+        /*console.log("do this first");
+        setTimeout(function () {
+            var second = "do this second";
+            for(var eachLetter of second) {
+                console.log(eachLetter)
+            }
+        }, 0);
+        console.log("do this third");*/
+
+        //ex 5...
+        /*console.log("do this first");
+        var rand1 = Math.ceil(Math.random() * 10);
+        console.log(`the first async function will wait at least
+        ${rand1} seconds`);
+
+        var rand2 = Math.ceil(Math.random() * 10);
+        console.log(`the second async function will wait at least
+        ${rand2} seconds`)
+
+        setTimeout(function () {
+           console.log(`finishing async1 after ${rand1} seconds`) 
+        }, rand1 * 1000);
+
+        setTimeout(function () {
+           console.log(`finishing async2 after ${rand2} seconds`); 
+        }, rand2 * 1000);
+        console.log("do this last");*/
+    </script>
+</body>
+</html>
+</html>
